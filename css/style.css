@@ -1,0 +1,244 @@
+html {
+    box-sizing: border-box;
+    background: url(../img/Brick_texture.png);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing:inherit;
+}
+
+html {
+    font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+}
+body { 
+    background-color: #fff799;
+}
+header {
+}
+#container  {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+/* navigation */
+nav {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 5px 0px;
+    list-style: none;
+    line-height: normal;
+}
+
+nav li {
+    background-color :#f68067;
+    padding: 8px;
+    margin-bottom: 7px;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    text-align: center;
+}
+nav li:hover {
+    background-color: #d4e1ec;
+}
+nav a {
+    margin-right: 1px;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 1px 1px 0px rgba(0,0,0,.2);
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #1F1F1F;
+    border: none;
+}
+/* body style */
+em  {
+    font-size: 10px;
+}
+h1  {
+    font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+    line-height: 26.4px;
+    color: #3bb001;
+    text-shadow: 1px 1px 0px rgba(0,0,0,.2);
+    text-transform: uppercase;
+}
+h2  {
+    font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 20.4px;
+}
+h3  {
+    font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 15.4px;
+}
+p   {
+    font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+}
+li  {
+    font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 13.4px;
+}
+strong  {
+    font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+}
+.menu   {
+    width: 100px;
+}
+.side-img   {
+    width: 250px;
+    padding-right: 5px;
+}
+.blue   {
+    color: #4b4a83;
+}
+.yellow {
+    color: #fff799;
+}
+#eggporkalypse  {
+    font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 600;
+    color: #ff7373;
+}
+#aside {
+    background-color: #4b4a83;
+    padding: 5px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#aside h2   {
+    color: ##fff799;
+}
+.footer {
+    background-color: #f68067;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+#banner {
+    margin: 0px auto;
+}
+
+#banner img {
+    border-radius: 8px;
+    height: auto;
+    width: 100%;
+}
+/* mobile */
+@media all and (max-width: 420px) {
+    nav li {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 5px;
+        background-color: #f68067;
+        text-align: center;
+    }
+    nav {
+        width: 420px;
+    }
+    #main  { 
+        width: 100%;
+        display: inline-block;
+    }
+
+    #breakfast  { 
+        width: 100%;
+        display: inline-block;
+    }
+    #aside   {
+        width: 100%;
+        display: inline-block;
+    }
+}
+
+/* tablet */
+@media all and (min-width: 421px) {
+    nav li {
+        display: inline-block;
+        width: calc(100% / 3);
+    }
+    nav {
+        width: 768px;
+    }
+    #main  { 
+        width: 65%;
+        display: inline-block;
+        padding: 5px;
+    }
+    #aside   {
+        width: 35%;
+        display: inline-block;
+        float: right;
+    }
+    .menu {
+        float: left;
+        padding-right: 5px;
+    }
+    .side-img {
+        float: left;
+        padding-right: 5px;
+    }
+    #breakfast  { 
+        width: 65%;
+        display: inline-block;
+        padding: 5px;
+    }
+}
+
+/* desktop: */
+@media all and (min-width: 768px) {
+    #main  { 
+        width: 65%;
+        display: inline-block;
+        padding: 5px;
+    }
+    #aside   {
+        width: 35%;
+        display: inline-block;
+        float: right;
+    }
+    #item   {
+        width: 200px;
+        float: left;
+    }
+    nav li {
+        display: inline-block;
+        width: calc(100% / 5);
+    }
+}
