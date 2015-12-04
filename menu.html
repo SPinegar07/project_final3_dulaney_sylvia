@@ -7,6 +7,7 @@
     <meta name="description" content="JJ's Diner - Pawnee's favorite place to eat since 1866">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/vendor/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' />
     <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' />
 </head>
@@ -28,7 +29,7 @@
 	    </header>
 	        <article id="breakfast">
 	            <section>
-	            	<h2>Breakfast</h2>
+	            	<h2 id="bottom">Breakfast</h2>
 	            		<p><img src="img/eggporkalypse.jpg" alt="four horsemeals of the egg porkalypse" class="menu" />
 	            			<p><strong><span id="eggporkalypse">The Four Horsemeals of the Egg Porkalypse -</span></strong> when you can't remember the last time you ate, fill up with this twelve-egg scramble, sausage, ham, hash browns, chicken-fried steak, and a giant tower of buttermilk pancakes wrapped in a bacon weave. Eat the whole thing in one sitting without having a heart attack and there's no charge. <em>$24.99</em>
 	            			</p>
@@ -112,8 +113,10 @@
 	            			</p>
 	            		</p>
 	            		<br />
+	            		<p>
+			        	<a href="#bottom" class="btn" onclick="$('#bottom').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});">Back to Top</a>
+			        	</p>
 	        </article>
-
 	        <article id="aside">
 	            <section>
 	                <h1>Daily Specials</h1>
@@ -136,5 +139,8 @@
 	    </div>
 	<!-- end #footer -->
 	</div>
+		<script src="js/jquery-2.1.4.js"></script>
+	   <script src="js/animatescroll.js"></script>
+       <script src="js/script.js"></script>
 </body>
 </html>
