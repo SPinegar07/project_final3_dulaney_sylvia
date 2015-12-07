@@ -1,3 +1,7 @@
+$(document).ready(function() {
+        $('.tooltip').tooltipster();
+});
+
 $('#no').novacancy({
     'reblinkProbability': 0.1,
     'blinkMin': 0.01,
@@ -11,17 +15,4 @@ $('#no').novacancy({
     'classOn': 'on',
     'classOff': 'off',
     'autoOn': true
-});
-
-$(function() {
-    var LocsA = [
-    {
-        lat: 33.8,
-        lon: -84.3,
-        map_div: #gmap,
-        title: 'JJs Diner',
-        html: '<h3>JJs Diner</h3>',
-        icon: 'http://maps.google.com/mapfiles/markerA.png',
-        animation: google.maps.Animation.DROP,
-    }
 });
